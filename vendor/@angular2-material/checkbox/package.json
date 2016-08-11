@@ -1,0 +1,54 @@
+{
+  "name": "@angular2-material/checkbox",
+  "version": "2.0.0-alpha.7-2",
+  "description": "Angular 2 Material checkbox",
+  "main": "./checkbox.js",
+  "typings": "./checkbox.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "checkbox"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.7-2",
+    "@angular/forms": "^0.3.0"
+  },
+  "_id": "@angular2-material/checkbox@2.0.0-alpha.7-2",
+  "scripts": {},
+  "_shasum": "8cee5f7ef96822c3e092161b1a49d01bd43e1fcc",
+  "_from": "@angular2-material/checkbox@>=2.0.0-alpha.7-2 <3.0.0",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.7-2.tgz",
+  "_npmVersion": "3.7.5",
+  "_nodeVersion": "5.7.0",
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "8cee5f7ef96822c3e092161b1a49d01bd43e1fcc",
+    "tarball": "https://registry.npmjs.org/@angular2-material/checkbox/-/checkbox-2.0.0-alpha.7-2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/checkbox-2.0.0-alpha.7-2.tgz_1470853899456_0.5260312836617231"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

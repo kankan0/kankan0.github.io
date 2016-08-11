@@ -1,0 +1,53 @@
+{
+  "name": "@angular2-material/menu",
+  "version": "2.0.0-alpha.7-2",
+  "description": "Angular 2 Material menu",
+  "main": "./menu.js",
+  "typings": "./menu.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "menu"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.7-2"
+  },
+  "_id": "@angular2-material/menu@2.0.0-alpha.7-2",
+  "scripts": {},
+  "_shasum": "2a4aa217f2253d1b33fc5779b2fdecf88a87be74",
+  "_from": "@angular2-material/menu@>=2.0.0-alpha.7-2 <3.0.0",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/menu/-/menu-2.0.0-alpha.7-2.tgz",
+  "_npmVersion": "3.7.5",
+  "_nodeVersion": "5.7.0",
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "2a4aa217f2253d1b33fc5779b2fdecf88a87be74",
+    "tarball": "https://registry.npmjs.org/@angular2-material/menu/-/menu-2.0.0-alpha.7-2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/menu-2.0.0-alpha.7-2.tgz_1470853932549_0.3542929324321449"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

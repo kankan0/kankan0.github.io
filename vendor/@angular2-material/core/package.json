@@ -1,0 +1,53 @@
+{
+  "name": "@angular2-material/core",
+  "version": "2.0.0-alpha.7-2",
+  "description": "Angular 2 Material core",
+  "main": "./core.js",
+  "typings": "./core.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/common": "^2.0.0-rc.5"
+  },
+  "_id": "@angular2-material/core@2.0.0-alpha.7-2",
+  "scripts": {},
+  "_shasum": "459ce2d2b004856961d6869e893613c63539d69b",
+  "_from": "@angular2-material/core@>=2.0.0-alpha.7-2 <3.0.0",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/core/-/core-2.0.0-alpha.7-2.tgz",
+  "_npmVersion": "3.7.5",
+  "_nodeVersion": "5.7.0",
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "459ce2d2b004856961d6869e893613c63539d69b",
+    "tarball": "https://registry.npmjs.org/@angular2-material/core/-/core-2.0.0-alpha.7-2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/core-2.0.0-alpha.7-2.tgz_1470853903800_0.13552946131676435"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

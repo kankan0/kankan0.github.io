@@ -1,0 +1,54 @@
+{
+  "name": "@angular2-material/progress-circle",
+  "version": "2.0.0-alpha.7-2",
+  "description": "Angular 2 Material progress-circle",
+  "main": "./progress-circle.js",
+  "typings": "./progress-circle.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "progress",
+    "spinner"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.7-2"
+  },
+  "_id": "@angular2-material/progress-circle@2.0.0-alpha.7-2",
+  "scripts": {},
+  "_shasum": "55a85eb2709e503793ea972d3adce617c54c8a68",
+  "_from": "@angular2-material/progress-circle@>=2.0.0-alpha.7-2 <3.0.0",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/progress-circle/-/progress-circle-2.0.0-alpha.7-2.tgz",
+  "_npmVersion": "3.7.5",
+  "_nodeVersion": "5.7.0",
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "55a85eb2709e503793ea972d3adce617c54c8a68",
+    "tarball": "https://registry.npmjs.org/@angular2-material/progress-circle/-/progress-circle-2.0.0-alpha.7-2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/progress-circle-2.0.0-alpha.7-2.tgz_1470853938455_0.5694662192836404"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}
