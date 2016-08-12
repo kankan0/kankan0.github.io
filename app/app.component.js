@@ -9,33 +9,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require("@angular/router");
 var AppComponent = (function () {
     function AppComponent() {
         this.formShowing = false;
         this.views = [
             {
-                name: "My Account",
-                description: "Edit my account information",
-                icon: "assignment ind"
+                name: '今日精选',
+                routing: [''],
+                icon: 'assignment ind'
             },
             {
-                name: "Potential dates",
-                description: "Find your soulmate!",
-                icon: "pets"
+                name: '福利',
+                routing: ['category', '福利'],
+                icon: 'pets'
             },
             {
-                name: "Potential dates",
-                description: "Find your soulmate!",
-                icon: "pets"
+                name: '前端',
+                routing: ['category', '前端'],
+                icon: 'pets'
+            },
+            {
+                name: 'Android',
+                routing: ['category', 'Android'],
+                icon: 'android'
+            },
+            {
+                name: 'iOS',
+                routing: ['category', 'iOS'],
+                icon: 'pets'
+            },
+            {
+                name: '休息视频',
+                routing: ['category', '休息视频'],
+                icon: 'pets'
+            },
+            {
+                name: '拓展资源',
+                routing: ['category', '拓展资源'],
+                icon: 'pets'
             }
-        ];
-        this.dogs = [
-            { name: "Porter" },
-            { name: "Mal" },
-            { name: "Razzle" },
-            { name: "Koby" },
-            { name: "Molly" },
-            { name: "Husi" }
         ];
     }
     AppComponent = __decorate([
@@ -44,6 +57,7 @@ var AppComponent = (function () {
             selector: 'kk-root',
             templateUrl: 'app.component.html',
             styleUrls: ['app.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

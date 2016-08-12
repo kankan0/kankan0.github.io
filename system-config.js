@@ -55,6 +55,8 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
+    'app/today',
+    'app/category',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
@@ -65,7 +67,8 @@ System.config({
     map: {
         '@angular': 'vendor/@angular',
         'rxjs': 'vendor/rxjs',
-        'main': 'main.js'
+        'main': 'main.js',
+        '@angular2-material': 'vendor/@angular2-material'
     },
     packages: cliSystemConfigPackages
 });

@@ -32,14 +32,26 @@ var portal_directives_1 = require('@angular2-material/core/portal/portal-directi
 var overlay_directives_1 = require('@angular2-material/core/overlay/overlay-directives');
 var menu_1 = require('@angular2-material/menu/menu');
 var dir_1 = require('@angular2-material/core/rtl/dir');
+var http_1 = require('@angular/http');
+var app_routing_1 = require("./app.routing");
 var app_component_1 = require('./app.component');
+var navigation_item_component_1 = require('./navigation-item.component');
+var today_1 = require('./today');
+var category_1 = require('./category');
+var data_service_1 = require('./services/data.service');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [app_component_1.AppComponent],
-            imports: [platform_browser_1.BrowserModule,
+            declarations: [
+                app_component_1.AppComponent,
+                navigation_item_component_1.NavigationItemComponent,
+                today_1.TodayComponent,
+                category_1.CategoryComponent
+            ],
+            imports: [
+                platform_browser_1.BrowserModule,
                 button_1.MdButtonModule,
                 button_toggle_1.MdButtonToggleModule,
                 card_1.MdCardModule,
@@ -61,7 +73,10 @@ var AppModule = (function () {
                 tooltip_1.MdTooltipModule,
                 overlay_directives_1.OverlayModule,
                 portal_directives_1.PortalModule,
-                dir_1.RtlModule,],
+                dir_1.RtlModule,
+                http_1.HttpModule,
+                app_routing_1.APP_ROUTING],
+            providers: [data_service_1.DataService],
             bootstrap: [app_component_1.AppComponent],
         }), 
         __metadata('design:paramtypes', [])

@@ -1,0 +1,16 @@
+.secondary {
+  color: rgba(0,0,0,0.54);
+}
+
+md-card {
+  width: 800px;
+  box-sizing: border-box;
+  margin: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
