@@ -7,35 +7,23 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-    '@angular2-material': 'vendor/@angular2-material',
+    'moment': 'vendor/moment/moment.js',
+    'materialize': 'vendor/materialize-css',
+    'angular2-materialize': 'vendor/angular2-materialize',
+    'jquery': 'vendor/jquery'
 };
 /** User packages configuration. */
-var packages = {};
-// put the names of any of your Material components here
-var materialPkgs = [
-    'button',
-    'card',
-    'core',
-    'checkbox',
-    'grid-list',
-    'icon',
-    'input',
-    'list',
-    'menu',
-    'progress-bar',
-    'progress-circle',
-    'radio',
-    'sidenav',
-    'slider',
-    'slide-toggle',
-    'button-toggle',
-    'tabs',
-    'toolbar',
-    'tooltip',
-];
-materialPkgs.forEach(function (pkg) {
-    packages[("@angular2-material/" + pkg)] = { main: pkg + ".js" };
-});
+var packages = {
+    'materialize': {
+        "format": "global",
+        "main": "dist/js/materialize",
+        "defaultExtension": "js"
+    },
+    'angular2-materialize': {
+        "main": "dist/index",
+        "defaultExtension": "js"
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -52,11 +40,12 @@ var barrels = [
     '@angular/platform-browser-dynamic',
     // Thirdparty barrels.
     'rxjs',
+    'monent',
     // App specific barrels.
     'app',
     'app/shared',
-    'app/today',
-    'app/category',
+    'app/components',
+    'app/services',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
@@ -67,8 +56,7 @@ System.config({
     map: {
         '@angular': 'vendor/@angular',
         'rxjs': 'vendor/rxjs',
-        'main': 'main.js',
-        '@angular2-material': 'vendor/@angular2-material'
+        'main': 'main.js'
     },
     packages: cliSystemConfigPackages
 });

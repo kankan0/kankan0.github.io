@@ -1,0 +1,12 @@
+<div *ngIf="!dataReady">
+  <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+</div>
+    <div *ngIf="dataReady">
+      <ul materialize="tabs" class="tabs">
+        <li *ngFor="let category of categories" [routerLink]="[category]" class="tab col s3"><a>{{category}}</a></li>
+      </ul>
+    </div>
+
+<router-outlet></router-outlet>
