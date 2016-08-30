@@ -1,0 +1,9 @@
+
+<div *ngIf="isPicture">
+  <kk-picture-detail [topic]="topics[0]"></kk-picture-detail>
+</div>
+
+<div *ngIf="!isPicture">
+  <kk-post-list [topics]="topics"></kk-post-list>
+</div>
+

@@ -1,0 +1,55 @@
+<div *ngIf="!initilized">
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+</div>
+
+<div  class="content">
+
+  <div *ngIf="initilized">
+    <div class="infinite-scroll" infinite-scroll
+         [infiniteScrollDistance]="5"
+         [infiniteScrollThrottle]="500"
+         (scrolled)="onScroll()">
+      <div *ngIf="isPicture">
+        <kk-picture-list [topics]="topics"></kk-picture-list>
+      </div>
+
+      <div *ngIf="!isPicture">
+        <kk-post-list [topics]="topics"></kk-post-list>
+      </div>
+    </div>
+    <div *ngIf="!hasMore">
+      <div id="end-tip" class="container">
+        <div class="col s12 m12 l12">
+          <p class="center-align">后面木有啦!</p>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div *ngIf="hasMore">
+      <div class="container">
+        <div class="col s12 m7 center">
+          <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-green-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  -->
+
+
+</div>

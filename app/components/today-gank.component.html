@@ -4,9 +4,12 @@
   </div>
 </div>
     <div *ngIf="dataReady">
-      <ul materialize="tabs" class="tabs">
-        <li *ngFor="let category of categories" [routerLink]="[category]" class="tab col s3"><a>{{category}}</a></li>
+      <ul materialize="tabs" class="tabs" >
+        <li *ngFor="let category of categories" class="tab col s3"><a [routerLink]="[category]" [routerLinkActive]="['active']">{{category}}</a></li>
       </ul>
     </div>
 
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+

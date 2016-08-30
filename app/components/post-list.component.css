@@ -1,0 +1,6 @@
+.card-title a {
+  top: 5px;
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #E57373
+}

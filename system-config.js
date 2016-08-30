@@ -10,7 +10,7 @@ var map = {
     'moment': 'vendor/moment/moment.js',
     'materialize': 'vendor/materialize-css',
     'angular2-materialize': 'vendor/angular2-materialize',
-    'jquery': 'vendor/jquery'
+    'angular2-infinite-scroll': 'vendor/angular2-infinite-scroll'
 };
 /** User packages configuration. */
 var packages = {
@@ -21,6 +21,10 @@ var packages = {
     },
     'angular2-materialize': {
         "main": "dist/index",
+        "defaultExtension": "js"
+    },
+    'angular2-infinite-scroll': {
+        "main": "angular2-infinite-scroll",
         "defaultExtension": "js"
     }
 };
@@ -40,7 +44,6 @@ var barrels = [
     '@angular/platform-browser-dynamic',
     // Thirdparty barrels.
     'rxjs',
-    'monent',
     // App specific barrels.
     'app',
     'app/shared',
