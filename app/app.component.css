@@ -98,7 +98,7 @@ ul.side-nav.fixed li.active > a >  i.material-icons {
 }
 
 ul.side-nav.fixed li:hover {
-  background-color: #f6b2b5
+  background-color: #ee6e73
 }
 
 ul.side-nav.fixed li:hover a {
@@ -904,5 +904,12 @@ body.parallax-demo footer {
   background-color: #eee;
   outline: none
 }
+
+
+.userView a img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 

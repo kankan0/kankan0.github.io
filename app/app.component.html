@@ -31,6 +31,19 @@
     <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
       <object id="front-page-logo" type="image/svg+xml" data="materialized.svg">Your browser does not support SVG</object></a></li>
     <li class="divider"></li>
+    <div class="userView">
+      <div *ngIf="isAuth()">
+        <a><img class="circle" [src]="currentUser.avatar"></a>
+        <a><span class="name center">{{currentUser.name}}</span></a>
+        <a ><span class="email center">{{currentUser.email}}</span></a>
+        <a class="waves-effect waves-light btn" (click)="SignOut()">SignOut</a>
+      </div>
+      <div *ngIf="!isAuth()">
+        <a class="waves-effect waves-light btn" (click)="SignIn()">SignIn With GitHub</a>
+      </div>
+    </div>
+
+    <li class="divider"></li>
     <li *ngFor="let navItem of navItems" [routerLink]="navItem.routing" [routerLinkActive]="['active']">
       <a class="waves-effect"><i class="material-icons">{{navItem.icon}}</i>{{navItem.name}}</a>
     </li>
