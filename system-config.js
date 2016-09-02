@@ -9,7 +9,8 @@
 var map = {
     'moment': 'vendor/moment/moment.js',
     'materialize': 'vendor/materialize-css',
-    'angular2-materialize': 'vendor/angular2-materialize'
+    'angular2-materialize': 'vendor/angular2-materialize',
+    'angular2-jwt': 'vendor/angular2-jwt/angular2-jwt.js',
 };
 /** User packages configuration. */
 var packages = {
