@@ -1,0 +1,41 @@
+<div class="metabar u-clearfix js-metabar metabar--bordered metabar--tall u-borderBottomGrayLightest u-boxShadowBottom" [ngClass]="{'metabar--affixed': isHide, 'is-minimized': isHide}">
+            <div #metabarLogo  class="metabar-inner u-marginAuto u-maxWidth1000 u-paddingLeft20 u-paddingRight20 js-metabarMiddle is-hideWhenMinimized">
+               <div class="metabar-block metabar-block--left u-floatLeft u-height65 u-xs-height56">
+                  <a href="/" class="siteNav-logo">
+                     <span class="svgIcon svgIcon--logoNew svgIcon--45px is-flushLeft">
+                        <svg class="svgIcon-use" width="45" height="45" viewBox="-17 18 45 45" data-multipart="true">
+                           <path d="M11.525 28.078c-.472-.225-.858.002-.858.506v20.044l8.616 4.113c.948.46 1.717.14 1.717-.7v-19.3a.22.22 0 0 0-.124-.19l-9.35-4.46v-.01z"></path>
+                           <path d="M.333 43.696l9.83-15.247c.278-.43.89-.6 1.36-.38l9.364 4.47c.06.03.082.1.047.15L10.666 48.63.333 43.698v-.002z"></path>
+                           <path d="M-8.57 28.35c-.786-.375-1.053-.096-.592.62L.333 43.696l10.333 4.932L.356 32.635a.156.156 0 0 0-.06-.054l-8.866-4.23z"></path>
+                           <path d="M.333 52.033c0 .84-.643 1.22-1.43.844l-8.045-3.84c-.472-.224-.858-.82-.858-1.325V28.89c0-.672.515-.976 1.145-.675l9.133 4.36a.092.092 0 0 1 .055.084v19.37z"></path>
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+               <div class="metabar-block metabar-block--right u-floatRight u-height65 u-xs-height56">
+                  <div class="buttonSet">
+                     <a *ngIf="!isAuth()" class="button button--primary" (click)="SignIn()">Sign in / Sign up</a>
+                     <div *ngIf="isAuth()">
+                      <a class="button button--primary button--chromeless u-accentColor--buttonNormal is-inSiteNavBar u-sm-hide u-marginRight15 u-lineHeight30 u-height32 is-touched">{{currentUser.name}}</a>
+                      <button class="button button--chromeless u-baseColor--buttonNormal is-inSiteNavBar js-userActions is-touched" >
+                        <div class="avatar">
+                          <img [src]="currentUser.avatar" class="avatar-image avatar-image--icon" alt="{{currentUser.name}}">
+                        </div>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="metabar-inner u-marginAuto u-maxWidth1000 js-metabarBottom u-paddingLeft20 u-paddingRight20">
+              <div class="metabar-block metabar-block--below u-height50 u-xs-height39">
+                <nav class="u-maxWidth640 container">
+                  <ul class="browsableStreamTabs  js-trackedCatalogTabs">
+                        <li class="browsableStreamTabs-item js-trackedCatalogTab" *ngFor="let navItem of navItems">
+                          <a class="link link--primary u-accentColor--textDarken u-baseColor--link"  [routerLink]="navItem.routing" [routerLinkActive]="['active']">{{navItem.name}}</a>
+                          </li>
+                      </ul>
+                </nav>
+              </div>
+            </div> 
+         </div>
+         <div #metabarSpacer class="metabar metabar--spacer js-metabarSpacer u-height115 u-xs-height95"></div>

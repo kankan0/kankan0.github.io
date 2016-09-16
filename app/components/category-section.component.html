@@ -1,0 +1,20 @@
+<div class="streamItem-card streamItem-card--compressedPostListHeader streamItem-card--hPadding20">
+  <div class="streamItem-cardInner streamItem-cardInner--compressedPostListHeader">
+    <div class="heading u-clearfix heading--paddedBottom">
+      <div class="u-clearfix">
+        <div class="heading-content u-floatLeft">
+          <span class="heading-title heading-title--semibold">{{category}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="streamItem-card streamItem-card--compressedPostList streamItem-card--borderRadius3 cardChromeless">
+  <div class="streamItem-cardInner streamItem-cardInner--compressedPostList">
+    <ul>
+      <li class="compressedPostListItem" *ngFor="let detail of details">
+        <kk-article [article]="detail"></kk-article>
+      </li>
+    </ul>
+  </div>
+</div>

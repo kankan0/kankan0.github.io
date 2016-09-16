@@ -1,55 +1,26 @@
-<div *ngIf="!initilized">
-  <div class="progress">
-    <div class="indeterminate"></div>
+<div *ngIf="initilized">
+  <div class="streamItem streamItem--postPreview" *ngFor="let article of articles">
+    <div class="streamItem-card streamItem-card--postPreview streamItem-card--hPadding20 streamItem-card--borderRadius3 cardChromeless">
+      <div class="streamItem-cardInner streamItem-cardInner--postPreview">
+
+        <kk-article [article]="article" [isImage]="isImage"></kk-article>
+
+      </div>
+    </div>
   </div>
-</div>
 
-<div  class="content">
-
-  <div *ngIf="initilized">
-    <div class="infinite-scroll" infinite-scroll
-         [infiniteScrollDistance]="2"
-         [infiniteScrollThrottle]="500"
-         (scrolled)="onScroll()">
-      <div *ngIf="isPicture">
-        <kk-picture-list [topics]="topics"></kk-picture-list>
-      </div>
-
-      <div *ngIf="!isPicture">
-        <kk-post-list [topics]="topics"></kk-post-list>
-      </div>
+  <div class="responsesStreamWrapper u-maxWidth640 js-responsesStreamWrapper container u-maxWidth640" *ngIf="hasMore">
+    <div class="row">
+      <button *ngIf="!isLoading" class="button button--primary
+      button--withChrome u-accentColor--buttonNormal
+      responsesStream-showOtherResponses cardChromeless u-sizeFullWidth"  (click)="loadCategoryData()">
+        看看更多{{currentCategory}}精彩内容
+      </button>
+      <button *ngIf="isLoading" class="button button--primary
+      button--withChrome u-accentColor--buttonNormal
+      responsesStream-showOtherResponses cardChromeless u-sizeFullWidth">
+        正在努力加载...
+      </button>
     </div>
-    <div *ngIf="!hasMore">
-      <div id="end-tip" class="container">
-        <div class="col s12 m12 l12">
-          <p class="center-align">后面木有啦!</p>
-        </div>
-      </div>
-    </div>
-
-    <!--
-    <div *ngIf="hasMore">
-      <div class="container">
-        <div class="col s12 m7 center">
-          <div class="preloader-wrapper small active">
-            <div class="spinner-layer spinner-green-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div>
-              <div class="gap-patch">
-                <div class="circle"></div>
-              </div>
-              <div class="circle-clipper right">
-                <div class="circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
-  -->
-
-
 </div>

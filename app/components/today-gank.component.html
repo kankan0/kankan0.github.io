@@ -1,15 +1,7 @@
-<div *ngIf="!dataReady">
-  <div class="progress">
-      <div class="indeterminate"></div>
+
+<div class="u-maxWidth640" *ngIf="dataReady">
+
+  <div class="category-section" *ngFor="let category of categories;">
+    <kk-category-section [category]="category" [details]="todayGank[category]"></kk-category-section>
   </div>
 </div>
-    <div *ngIf="dataReady">
-      <ul materialize="tabs" class="tabs" >
-        <li *ngFor="let category of categories" class="tab col s3"><a [routerLink]="[category]" [routerLinkActive]="['active']">{{category}}</a></li>
-      </ul>
-    </div>
-
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
-

@@ -1,72 +1,12 @@
-<!--
-<nav>
-    <div id="nav-icon" class="nav-wrapper red lighten-2">
-      <span materialize="sideNav"
-        data-activates="slide-out" class="brand-logo hide-on-med-and-d ">
-        <i class="material-icons">menu</i>KANKAN
-      </span>
-
-      <span class="brand-logo center">{{activatedCategory}}</span>
-    </div>
-</nav>
-<div>
-  <ul id="slide-out" class="side-nav">
-    <li *ngFor="let navItem of navItems" [routerLink]="navItem.routing">
-      <a class="waves-effect"><i class="material-icons">{{navItem.icon}}</i>{{navItem.name}}</a>
-    </li>
-  </ul>
+<div class="site-main surface-container">
+   <div class="surface" style="display: block; visibility: visible;">
+     <div class="screenContent surface-content">
+         <kk-navigation></kk-navigation>
+         <div class="homeContainer js-homepage u-backgroundGrayLightest u-clearfix">
+           <div class="u-foreground homeContainer-content u-maxWidth640 u-marginAuto u-clearfix u-sizeViewHeightMin100">
+             <router-outlet></router-outlet>
+            </div>
+         </div>
+     </div>
+   </div>
 </div>
-
-<router-outlet></router-outlet>
-
--->
-<header>
-  <nav class="top-nav">
-    <div class="container">
-      <div class="nav-wrapper"><a class="page-title">{{activatedCategory}}</a></div>
-    </div>
-  </nav>
-  <div class="container"><a materialize="sideNav" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
-  <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(-100%);">
-    <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
-      <object id="front-page-logo" type="image/svg+xml" data="materialized.svg">Your browser does not support SVG</object></a></li>
-    <li class="divider"></li>
-    <div class="userView">
-      <div *ngIf="isAuth()">
-        <a><img class="circle" [src]="currentUser.avatar"></a>
-        <a><span class="name center">{{currentUser.name}}</span></a>
-        <a ><span class="email center">{{currentUser.email}}</span></a>
-        <a class="waves-effect waves-light btn" (click)="SignOut()">SignOut</a>
-      </div>
-      <div *ngIf="!isAuth()">
-        <a class="waves-effect waves-light btn" (click)="SignIn()">SignIn</a>
-      </div>
-    </div>
-
-    <li class="divider"></li>
-    <li *ngFor="let navItem of navItems" [routerLink]="navItem.routing" [routerLinkActive]="['active']">
-      <a class="waves-effect"><i class="material-icons">{{navItem.icon}}</i>{{navItem.name}}</a>
-    </li>
-  </ul>
-</header>
-
-<main>
-  <div>
-    <div class="row">
-      <div id="main-content" class="col s12 m12 l12">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</main>
-
-<!--
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container">
-      © 2014-2016 Materialize, All rights reserved.
-      <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">MIT License</a>
-    </div>
-  </div>
-</footer>
--->

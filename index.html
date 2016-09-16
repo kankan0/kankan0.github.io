@@ -11,10 +11,10 @@
   <!-- Auth0 Lock script -->
   <script src="https://cdn.auth0.com/js/lock/10.0.0/lock.min.js"></script>
 
-  <link type="text/css" rel="stylesheet" href="vendor/materialize-css/dist/css/materialize.css"/>
+  <link type="text/css" rel="stylesheet" href="medium.css"/>
 
   <script>
-    (function(){
+    (function () {
       var redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect != location.href) {
@@ -29,28 +29,28 @@
   <link href="global.css" rel="stylesheet">
 </head>
 <body>
-  <kk-root>Loading...</kk-root>
+<kk-root>Loading...</kk-root>
 
-    <script src="vendor/es6-shim/es6-shim.js"></script>
-    <script src="vendor/reflect-metadata/Reflect.js"></script>
-    <script src="vendor/systemjs/dist/system.src.js"></script>
-    <script src="vendor/zone.js/dist/zone.js"></script>
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
-    <script type="text/javascript" src="firebase/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyChcJL2OPcH1wBtEoZEzLRi6WFbtev7wNg",
-        authDomain: "kankan-ad726.firebaseapp.com",
-        databaseURL: "https://kankan-ad726.firebaseio.com",
-        storageBucket: "kankan-ad726.appspot.com",
-      };
-      firebase.initializeApp(config);
-    </script>
+<script src="vendor/es6-shim/es6-shim.js"></script>
+<script src="vendor/reflect-metadata/Reflect.js"></script>
+<script src="vendor/systemjs/dist/system.src.js"></script>
+<script src="vendor/zone.js/dist/zone.js"></script>
+<script>
+  System.import('system-config.js').then(function () {
+    System.import('main');
+  }).catch(console.error.bind(console));
+</script>
+<script type="text/javascript" src="firebase/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyChcJL2OPcH1wBtEoZEzLRi6WFbtev7wNg",
+    authDomain: "kankan-ad726.firebaseapp.com",
+    databaseURL: "https://kankan-ad726.firebaseio.com",
+    storageBucket: "kankan-ad726.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
 
 </body>
 </html>
