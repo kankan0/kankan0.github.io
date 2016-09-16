@@ -2,20 +2,20 @@
   <!-- article header -->
   <div class="u-clearfix u-marginBottom10">
     <div class="postMetaInline u-floatLeft">
-      <div class="postMetaInline-avatar">
-        <div class="">
-          <img src="images/default-avatar.png"
-               class="avatar-image u-size36x36 u-xs-size32x32">
-        </div>
-      </div>
-      <div class="postMetaInline-authorLockup">
-        <span class="author">
-          {{article.who}}
-        </span>
-
-        <div class="u-fontSizeSmallest">
-          <span class="">{{article.publishedAt}}</span>
-        </div>
+      <div class="">
+        <li class="card card-user">
+          <div class="u-tableCell ">
+            <a class="avatar">
+              <img src="images/default-avatar.png" class="avatar-image avatar-image--smaller">
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="card-name">
+              <a class="author">{{article.who}}</a>
+            </h3>
+            <p class="card-description">{{article.publishedAt | date: 'yyyy-MM-dd HH:mm'}}</p>
+          </div>
+        </li>
       </div>
     </div>
   </div>
@@ -35,9 +35,11 @@
                      [src]="article.url"></a>
               </div>
 
-                <a [href]="article.url" target="_blank"><h3 class="summaryCard-name">{{article.desc}}</h3></a>
-
-
+                <a [href]="article.url" target="_blank">
+                  <h3 class="summaryCard-name">{{article.desc}}</h3>
+                  <br>
+                  <p class="card-description">{{article.url}}</p>
+                </a>
             </div>
           </div>
         </section>
