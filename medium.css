@@ -9413,6 +9413,12 @@ body.is-diagnosticsVisible .site-main {
   fill: rgba(0, 0, 0, .8)
 }
 
+.logoWord {
+  font-size: 28px;
+  font-weight: 600;
+  fill: #02b875;
+}
+
 .metabar .siteNav-logo {
   padding-left: 0;
   margin-left: -4px
