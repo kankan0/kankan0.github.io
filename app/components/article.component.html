@@ -1,12 +1,12 @@
 <article class="postArticle postArticle--short">
   <!-- article header -->
-  <div class="u-clearfix u-marginBottom10">
+  <div class="u-clearfix u-marginBottom5">
     <div class="postMetaInline u-floatLeft">
       <div class="">
         <li class="card card-user">
           <div class="u-tableCell ">
             <a class="avatar">
-              <img src="images/default-avatar.png" class="avatar-image avatar-image--smaller">
+              <img src="images/default-avatar.png" class="avatar-image avatar-image--ex-smaller">
             </a>
           </div>
           <div class="card-content">
@@ -21,7 +21,7 @@
   </div>
 
   <!-- title -->
-  <div class="u-clearfix u-paddingTop10">
+  <div class="u-clearfix">
     <a>
       <div class="postArticle-content">
         <section class=" section--body section--first section--last">
@@ -31,14 +31,12 @@
           <div class="section-content">
             <div class="section-inner">
               <div *ngIf="getIsImage()">
-                <a [href]="article.url" target="_blank"><img class="" style="height: 100%; width: 100%; object-fit: contain"
+                <a (click)="onSelect()"><img class="" style="height: 100%; width: 100%; object-fit: contain"
                      [src]="article.url"></a>
               </div>
 
-                <a [href]="article.url" target="_blank">
+                <a (click)="onSelect()">
                   <h3 class="summaryCard-name">{{article.desc}}</h3>
-                  <br>
-                  <p class="card-description">{{article.url}}</p>
                 </a>
             </div>
           </div>
@@ -48,7 +46,7 @@
   </div>
 
   <!-- footer -->
-  <div class="u-clearfix u-paddingTop10">
+  <div class="u-clearfix">
     <div class="buttonSet buttonSet--withLabels u-floatLeft">
       <div class="buttonSet-inner">
         <div class="">

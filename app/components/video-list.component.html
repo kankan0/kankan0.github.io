@@ -1,0 +1,23 @@
+<div *ngIf="dataReady">
+  <div class="streamItem streamItem--postPreview" *ngFor="let video of videos;">
+    <div class="streamItem-card streamItem-card--postPreview streamItem-card--borderRadius3 cardChromeless">
+      <div class="streamItem-cardInner">
+        <h3 class="summaryCard-name u-marginTop10">{{video.title}}</h3>
+      </div>
+      <div class="aspect-ratio">
+        <iframe frameborder="0" width="100%" height="375" [src]="video.url" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- http://v.qq.com/cover/k/keupp5sxcs53vlc/t0013s1z65u.html  -->
+
+  <div class="responsesStreamWrapper u-maxWidth640 js-responsesStreamWrapper container u-maxWidth640">
+    <div class="row">
+      <button *ngIf="!isLoading" class="button button--primary
+      button--withChrome u-accentColor--buttonNormal
+      responsesStream-showOtherResponses cardChromeless u-sizeFullWidth">
+        看看更多精彩内容
+      </button>
+    </div>
+  </div>
+</div>

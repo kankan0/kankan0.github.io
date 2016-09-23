@@ -1,0 +1,11 @@
+.detail-close {
+  font-size: 30px;
+}
+
+.article-detail {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  width: 96%;
+  height: 98%;
+}

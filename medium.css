@@ -2796,6 +2796,11 @@ body.is-swBoot {
   height: 32px
 }
 
+.avatar-image--ex-smaller {
+  width: 36px;
+  height: 36px
+}
+
 .avatar-image--smaller {
   width: 40px;
   height: 40px
@@ -9414,7 +9419,7 @@ body.is-diagnosticsVisible .site-main {
 }
 
 .logoWord {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   fill: #02b875;
 }
@@ -10006,7 +10011,7 @@ body.is-diagnosticsVisible .site-main {
 }
 
 .summaryCard-name {
-  font-size: 16px;
+  font-size: 17px;
   word-break: break-word;
   word-wrap: break-word
 }
@@ -12281,6 +12286,11 @@ body.is-swBoot .svgIcon--logoNew path:nth-child(4) {
   max-width: 660px
 }
 
+.streamItem-card--hPadding5 {
+  padding-right: 5px;
+  padding-left: 5px
+}
+
 .streamItem-card--hPadding20 {
   padding-right: 20px;
   padding-left: 20px
@@ -12292,12 +12302,12 @@ body.is-swBoot .svgIcon--logoNew path:nth-child(4) {
 }
 
 .streamItem-card {
-  margin-bottom: 10px
+  margin-bottom: 20px
 }
 
 .streamItem-cardInner {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, .15)
 }
 
@@ -12310,7 +12320,7 @@ body.is-swBoot .svgIcon--logoNew path:nth-child(4) {
 }
 
 .cardChromeless > .streamItem-cardInner {
-  padding-top: 10px;
+  padding-top: 5px;
   border-bottom: none
 }
 
